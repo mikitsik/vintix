@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/main.css" rel="stylesheet">
+  <title>Винтик</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0bc49ab2fffb1448bd9b627c5c025be36f605b37bb5fd3ad4c48f55522b417ab&amp;id=map&amp;height=280&amp;lang=ru_RU&amp;scroll=true"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <nav class="nav">
+        <img src="./images/logo.svg" alt="logo">
+        <a href="" class="nav-item" target="_self">
+          <span class="">О нас</span>
+        </a>
+        <a href="" class="nav-item" target="_self">
+          <span class="">Контакты</span>
+        </a><a href="" class="nav-item" target="_self">
+          <span class="">Галерея</span>
+        </a>
+      </nav>
+      <section class="slider-wrapper">
+        <button class="slide-arrow btn" id="prev">
+          &#8249;
+        </button>
+        <button class="slide-arrow btn" id="next">
+          &#8250;
+        </button>
+        <div class="slider">
+            <div class="slide active">
+              <p>Ремонт АКПП</p>
+              <img src="./images/engines/transmission1.webp">
+            </div>
+            <div class="slide">
+              <p>Ремонт DSG</p>
+              <img src="./images/engines/transmission2.jpg">
+            </div>
+            <div class="slide">
+              <p>Ремонт Вариаторов</p>
+              <img src="./images/engines/transmission3.png">
+            </div><div class="slide">
+              <p>Другие ремонтные работы</p>
+              <img src="./images/engines/car.webp">
+            </div>
+        </div>
+      </section>
+      <section>
+        <p>Наш адрес:</p>
+        <p>д.Каштановка, 14, Воложинский р-н, Минская область</p>
+        <p><a href="tel:+375293492975">+375(29)3492975</a></p>
+        <div id="map"></div>
+      </section>
+    </div>
+  </div>
+  <script type="text/javascript" charset="utf-8" async src="./js/slider.js"></script>
+</body>
+</html>

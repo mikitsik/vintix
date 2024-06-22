@@ -1,0 +1,9 @@
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0 20px 0;
+}
+
+.nav a {
+  text-decoration: none;
+}
