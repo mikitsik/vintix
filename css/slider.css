@@ -66,9 +66,9 @@
 }
 #prev, #prev_gl {
   left: 1rem;
-  padding-left: 2.3rem;
+  padding-left: 0.7rem;
 }
 #next, #next_gl {
   right: 1rem;
-  padding-left: 2.6rem;
+  padding-left: 0.7rem;
 }
