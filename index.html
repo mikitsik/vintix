@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./css/main.css" rel="stylesheet">
   <title>Винтик</title>
+  <link href="./css/main.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -15,15 +16,28 @@
     <div class="container">
       <nav class="nav">
         <img src="./images/logo.svg" alt="logo">
-        <a href="" class="nav-item" target="_self">
-          <span class="">О нас</span>
-        </a>
-        <a href="" class="nav-item" target="_self">
-          <span class="">Контакты</span>
-        </a><a href="" class="nav-item" target="_self">
-          <span class="">Галерея</span>
-        </a>
+        <div class="nav-items">
+          <a href="#about" class="nav-item">
+            <span class="">О нас</span>
+          </a>
+          <a href="#mapTitle" class="nav-item" target="_self">
+            <span class="">Карта</span>
+          </a>
+          <a href="" class="nav-item" target="_self">
+            <span class="">Контакты</span>
+          </a>
+          <a href="" class="nav-item" target="_self">
+            <span class="">Галерея</span>
+          </a>
+        </div>
+        <div class="call">
+          <a href="tel:+375293492975">
+            <img src="./images/tube.svg" alt="phone">
+            <div>+375(29)349-29-75</div>
+          </a>
+        </div>
       </nav>
+
       <section class="slider-wrapper">
         <button class="slide-arrow btn" id="prev">
           &#8249;
@@ -43,17 +57,39 @@
             <div class="slide">
               <p>Ремонт Вариаторов</p>
               <img src="./images/engines/transmission3.png">
-            </div><div class="slide">
+            </div>
+            <div class="slide">
+              <p>Компьютерная диагностика</p>
+              <img src="./images/engines/diagnostic.png">
+            </div>
+            <div class="slide">
               <p>Другие ремонтные работы</p>
               <img src="./images/engines/car.webp">
             </div>
         </div>
       </section>
-      <section>
-        <p>Наш адрес:</p>
-        <p>д.Каштановка, 14, Воложинский р-н, Минская область</p>
-        <p><a href="tel:+375293492975">+375(29)3492975</a></p>
+
+      <section id="about" class="about">
+        <p>Мы ремонтируем АКПП, ДСГ и вариаторы уже более 7 лет. Нас выбирают за качество, опыт и профессионализм. Мы работаем для Вас без выходных и оперативно решаем все проблемы. Кроме ремонта, гарантийного и послегарантийного сервиса АКПП, ДСГ и вариаторов мы делаем компьютерную диагностику, восстанавливаем подвеску, меняем ремни, масло и осуществляем другие работы по обслуживанию авто.</p>
+      </section>
+
+      <section class="map">
+        <p id="mapTitle">Карта проезда</p>
         <div id="map"></div>
+      </section>
+
+      <section>
+        <div class="kontakty">
+          <img src="./images/vintik.jpeg" alt="vintik">
+          <div>
+            <p>Наш адрес:</p>
+            <p>д.Каштановка, 14, Воложинский р-н, Минская область</p>
+            <a href="tel:+375293492975">
+              <img src="./images/tube.svg" alt="phone">
+              <div>+375(29)349-29-75</div>
+            </a>
+          </div>
+        </div>
       </section>
     </div>
   </div>

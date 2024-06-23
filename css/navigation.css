@@ -1,9 +1,42 @@
 .nav {
+  align-items: center;
   display: flex;
-  flex-wrap: wrap;
   padding: 0 0 20px 0;
 }
 
-.nav a {
+.nav img {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.nav-items {
+  align-items: end;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
+  padding: 0 50px;
+}
+
+.nav-items a {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 700;
+  opacity: 0.7;
   text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-items a:hover {
+  opacity: 1;
+}
+
+.call a {
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.call a img {
+  margin-right: 20px;
 }
