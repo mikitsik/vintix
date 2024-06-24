@@ -9,7 +9,7 @@
   text-align: center;
 }
 
-.gallery > div {
+.gallery div {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -17,13 +17,52 @@
 
 .gallery img {
   width: 300px;
-  margin: 40px;
+  margin: 10px;
 }
 
-.gallery .vint {
-  display: inline;
-  width: 27px;
-  margin-left: -6px;
-  margin-right: -4px;
-  margin-bottom: -3px;
+#expandBtn {
+  background-color: rgb(229, 227, 227);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  border-radius: 0 0 4rem 4rem;
+  padding: 0 1rem 0.5rem;
+  border: none;
+  opacity: 0.6;
+  outline: none;
+  transition: all 0.6s ease-in-out;
+}
+
+#expandBtn:hover {
+  opacity: 1;
+}
+
+#expandBtn.show {
+  flex-direction: column-reverse;
+  border-radius: 4rem 4rem 0 0;
+  padding: 0.5rem 1.5rem 0;
+  transition: all 0.5s ease-in-out;
+}
+
+#expandImg {
+  margin: 0 auto;
+  width: 20px;
+}
+
+#expandImg.show {
+  transform: rotate(180deg);
+}
+
+#more {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+#more.show {
+  opacity: 1;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
 }

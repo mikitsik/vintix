@@ -14,11 +14,13 @@
 <body>
   <div class="wrapper">
     <div class="container">
-      <button onclick="toTop()" id="topBtn" >
+      <a href="#" id="topBtn">
         <img src="./images/vint.svg" alt="top">
-      </button>
+      </a>
       <nav class="nav">
-        <img src="./images/logo.svg" class="logo" alt="logo">
+        <a href="#">
+          <img src="./images/logo.svg" class="logo" alt="logo">
+        </a>
         <div class="nav-items">
           <a href="#about" class="nav-item">
             <span class="">О нас</span>
@@ -70,20 +72,23 @@
               <img src="./images/engines/car.webp">
             </div>
         </div>
+        <div id="about"></div>
       </section>
 
-      <section id="about" class="about">
+      <section class="about">
         <p>О нас</p>
         <p>Мы ремонтируем АКПП, ДСГ и вариаторы уже более 7 лет. Нас выбирают за качество, опыт и профессионализм. Мы работаем для Вас без выходных и оперативно решаем все проблемы. Кроме ремонта, гарантийного и послегарантийного сервиса АКПП, ДСГ и вариаторов мы делаем компьютерную диагностику, восстанавливаем подвеску, меняем ремни, масло и осуществляем другие работы по обслуживанию авто.</p>
+        <div id="mapTitle"></div>
       </section>
 
       <section class="map">
-        <p id="mapTitle">Карта проезда</p>
+        <p>Карта проезда</p>
         <div id="map"></div>
+        <div id="kontakty"></div>
       </section>
 
       <section>
-        <div id="kontakty" class="kontakty">
+        <div class="kontakty">
           <img src="./images/vintik.jpeg" alt="vintik">
           <div>
             <p>Наш адрес:</p>
@@ -92,12 +97,13 @@
               <img src="./images/tube.svg" alt="phone">
               <div>+375(29)349-29-75</div>
             </a>
+            <div id="gallery"></div>
           </div>
         </div>
       </section>
 
-      <section id="gallery" class="gallery">
-        <p>Наше С<span><img src="./images/vint.svg" class="vint" alt="vint"></span>О</p>
+      <section class="gallery">
+        <p>Наше СТО</p>
         <div>
           <div class="item_gl">
             <img src="./images/gallery/1.jpg">
@@ -108,6 +114,8 @@
           <div class="item_gl">
             <img src="./images/gallery/3.jpg">
           </div>
+        </div>
+        <div id="more">
           <div class="item_gl">
             <img src="./images/gallery/4.jpg">
           </div>
@@ -127,6 +135,10 @@
             <img src="./images/gallery/9.jpg">
           </div>
         </div>
+        <button  onclick="expand()" id="expandBtn">
+          <div id="btnText">развернуть</div>
+          <img id="expandImg" src="./images/vint.svg" alt="vint">
+        </button>
       </section>
 
       <section class="last">
@@ -135,11 +147,14 @@
       </section>
 
       <footer>
-        <p>© 2024 Copyright Vintik</p>
+        <a href="https://www.linkedin.com/in/mikitsik/" target="_blank">
+          <p>© 2024 Copyright. Alex Mikitsik</p>
+        </a>
       </footer>
     </div>
   </div>
   <script type="text/javascript" charset="utf-8" async src="./js/slider.js"></script>
   <script type="text/javascript" charset="utf-8" async src="./js/topBtn.js"></script>
+  <script type="text/javascript" charset="utf-8" async src="./js/expandBtn.js"></script>
 </body>
 </html>
