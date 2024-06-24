@@ -55,7 +55,7 @@
   border-radius: 3rem;
   font-size: 3.5rem;
   cursor: pointer;
-  opacity: 0.5;
+  opacity: 0.6;
   transition: opacity 100ms;
   z-index: 1;
 }
@@ -63,13 +63,21 @@
 .slide-arrow:focus {
   opacity: 1;
 }
+
 #prev {
   left: 1rem;
-  padding-right: 0.6rem;
-  padding-bottom: 0.7rem;
 }
+#prev img {
+  margin: 0 auto;
+  transform: rotate(90deg) translateY(5px);
+  width: 31px;
+}
+
 #next {
   right: 1rem;
-  padding-left: 0.6rem;
-  padding-bottom: 0.6rem;
+}
+#next img {
+  margin: 0 auto;
+  transform: rotate(-90deg) translateY(6px);
+  width: 31px;
 }

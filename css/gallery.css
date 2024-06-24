@@ -5,17 +5,25 @@
 .gallery p {
   font-size: 1.5rem;
   font-weight: 500;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
   text-align: center;
 }
 
 .gallery > div {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .gallery img {
   width: 300px;
-  margin-bottom: 50px;
+  margin: 40px;
+}
+
+.gallery .vint {
+  display: inline;
+  width: 27px;
+  margin-left: -6px;
+  margin-right: -4px;
+  margin-bottom: -3px;
 }

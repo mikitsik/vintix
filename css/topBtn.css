@@ -12,11 +12,14 @@
   font-size: 3.5rem;
   outline: none;
   cursor: pointer;
-  opacity: 0.5;
+  opacity: 0.6;
   transition: opacity 100ms;
-  transform: rotate(-90deg);
-  padding-bottom: 0.6rem;
-  padding-left: 0.5rem;
+}
+
+#topBtn img {
+  margin: 0 auto;
+  transform: rotate(180deg) translateY(2px);
+  width: 31px;
 }
 
 #topBtn:hover, #topBtn:focus {
