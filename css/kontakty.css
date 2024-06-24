@@ -1,0 +1,26 @@
+.kontakty {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 100px 0;
+}
+
+.kontakty a {
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.kontakty img {
+  margin-right: 20px;
+}
+
+.kontakty p {
+  margin-bottom: 30px;
+}
+
+.kontakty p:first-child {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
