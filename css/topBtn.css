@@ -1,0 +1,24 @@
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 60px;
+  right: 80px;
+  height: 6rem;
+  width: 6rem;
+  z-index: 5;
+  background-color: rgb(229, 227, 227);
+  border: none;
+  border-radius: 3rem;
+  font-size: 3.5rem;
+  outline: none;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 100ms;
+  transform: rotate(-90deg);
+  padding-bottom: 0.6rem;
+  padding-left: 0.5rem;
+}
+
+#topBtn:hover, #topBtn:focus {
+  opacity: 1;
+}

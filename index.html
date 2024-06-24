@@ -14,6 +14,7 @@
 <body>
   <div class="wrapper">
     <div class="container">
+      <button onclick="topFunction()" id="topBtn" >&#8250;</button>
       <nav class="nav">
         <img src="./images/logo.svg" alt="logo">
         <div class="nav-items">
@@ -23,10 +24,10 @@
           <a href="#mapTitle" class="nav-item" target="_self">
             <span class="">Карта</span>
           </a>
-          <a href="" class="nav-item" target="_self">
+          <a href="#kontakty" class="nav-item" target="_self">
             <span class="">Контакты</span>
           </a>
-          <a href="" class="nav-item" target="_self">
+          <a href="#gallery" class="nav-item" target="_self">
             <span class="">Галерея</span>
           </a>
         </div>
@@ -70,6 +71,7 @@
       </section>
 
       <section id="about" class="about">
+        <p>О нас</p>
         <p>Мы ремонтируем АКПП, ДСГ и вариаторы уже более 7 лет. Нас выбирают за качество, опыт и профессионализм. Мы работаем для Вас без выходных и оперативно решаем все проблемы. Кроме ремонта, гарантийного и послегарантийного сервиса АКПП, ДСГ и вариаторов мы делаем компьютерную диагностику, восстанавливаем подвеску, меняем ремни, масло и осуществляем другие работы по обслуживанию авто.</p>
       </section>
 
@@ -79,7 +81,7 @@
       </section>
 
       <section>
-        <div class="kontakty">
+        <div id="kontakty" class="kontakty">
           <img src="./images/vintik.jpeg" alt="vintik">
           <div>
             <p>Наш адрес:</p>
@@ -92,7 +94,7 @@
         </div>
       </section>
 
-      <section class="gallery">
+      <section id="gallery" class="gallery">
         <p>Наше СТО</p>
         <div>
           <div class="item_gl">
@@ -136,5 +138,6 @@
     </div>
   </div>
   <script type="text/javascript" charset="utf-8" async src="./js/slider.js"></script>
+  <script type="text/javascript" charset="utf-8" async src="./js/topBtn.js"></script>
 </body>
 </html>
