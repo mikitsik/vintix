@@ -9,7 +9,6 @@
   background-color: rgb(229, 227, 227);
   border: none;
   border-radius: 3rem;
-  font-size: 3.5rem;
   outline: none;
   cursor: pointer;
   opacity: 0.6;
@@ -24,4 +23,23 @@
 
 #topBtn:hover, #topBtn:focus {
   opacity: 1;
+}
+
+@media screen and (max-width: 730px) {
+  #topBtn {
+    bottom: 45px;
+    right: 40px;
+    height: 5rem;
+    width: 5rem;
+  }
+  #topBtn img {
+    transform: rotate(180deg) translateY(-26px);
+    width: 25px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  #topBtn {
+    right: 30px;
+  }
 }

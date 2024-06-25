@@ -2,6 +2,7 @@
   align-items: center;
   background-color: rgba(255, 255, 255, 0.7);
   display: flex;
+  flex-wrap: wrap;
   padding: 20px 0 10px;
   position: sticky;
   top: 0;
@@ -34,7 +35,7 @@
 }
 
 .logo {
-  width: 260px;
+  max-width: 260px;
 }
 
 .call a {
@@ -46,4 +47,38 @@
 
 .call a img {
   margin-right: 20px;
+}
+
+@media screen and (max-width: 730px) {
+  .nav a {
+    flex-grow: 1;
+  }
+  .nav-items {
+    justify-content: space-between;
+    order: 3;
+    padding: 0;
+    width: 100%;
+  }
+  .nav-items a {
+    flex-grow: unset;
+    margin: 17px 0;
+  }
+  .call a {
+    font-size: 1.3rem;
+  }
+  .logo {
+    max-width: 190px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .nav {
+    flex-direction: column;
+  }
+  .logo {
+    max-width: 240px;
+  }
+  .call a {
+    margin: 15px 0 0;
+  }
 }

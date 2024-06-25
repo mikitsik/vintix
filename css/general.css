@@ -42,6 +42,7 @@ p {
 .last {
   align-items: center;
   display: flex;
+  flex-direction: row-reverse;
   text-align: justify;
 }
 
@@ -71,5 +72,34 @@ footer a {
 
 footer a:hover {
   opacity: 1;
+}
+
+@media screen and (max-width: 730px) {
+  .about {
+    margin: 20px 0 45px;
+  }
+  .about p:first-child {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+  }
+  p {
+    opacity: 0.9;
+    font-size: 1.2rem;
+  }
+  .map p {
+    font-size: 1.3rem;
+    margin-bottom: 65px;
+  }
+  .last {
+    display: block;
+  }
+  .last img {
+    float: right;
+    margin: 15px 0 15px 40px;
+    width: 150px;
+  }
+  footer {
+    margin-top: 70px;
+  }
 }
 

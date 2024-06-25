@@ -24,3 +24,25 @@
   font-size: 1.5rem;
   font-weight: 500;
 }
+
+@media screen and (max-width: 730px) {
+  .kontakty {
+    margin: 65px 0;
+  }
+  .kontakty > img {
+    margin-right: 30px;
+    width: 150px;
+  }
+  .kontakty > div {
+    width: 280px;
+  }
+  .kontakty p:first-child {
+    font-size: 1.3rem;
+  }
+  .kontakty p {
+    margin-bottom: 15px;
+  }
+  .kontakty a {
+    font-size: 1.3rem;
+  }
+}
