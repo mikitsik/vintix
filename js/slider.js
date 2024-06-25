@@ -20,12 +20,12 @@ function slider() {
 
     const activeSlide = document.querySelector(".active");
 
-    if (e.target.id === "next") {
+    if (e.target.id === "next" || e.target.id === "next_img") {
       slider.insertBefore(first, last.nextSibling);
 
       activeSlide.classList.remove("active");
       activeSlide.nextElementSibling.classList.add("active");
-    } else {
+    } else if (e.target.id === "prev" || e.target.id === "prev_img") {
       slider.insertBefore(last, first);
       activeSlide.classList.remove("active");
       activeSlide.previousElementSibling.classList.add("active");
