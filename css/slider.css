@@ -121,3 +121,16 @@
     right: 0;
   }
 }
+
+@media screen and (max-width: 470px) {
+  .slide-arrow {
+    width: 4rem;
+    height: 4rem;
+  }
+  .slide img {
+    width: 280px;
+  }
+  .slider {
+    height: 290px;
+  }
+}

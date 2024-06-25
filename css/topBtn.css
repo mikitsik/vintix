@@ -40,6 +40,11 @@
 
 @media screen and (max-width: 530px) {
   #topBtn {
-    right: 30px;
+    height: 4rem;
+    width: 4rem;
+    right: 10px;
+  }
+  #topBtn img {
+    transform: rotate(180deg) translateY(-18px);
   }
 }

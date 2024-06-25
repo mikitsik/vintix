@@ -46,3 +46,16 @@
     font-size: 1.3rem;
   }
 }
+
+@media screen and (max-width: 470px) {
+  .kontakty a {
+    font-size: 1.1rem;
+  }
+  .kontakty img {
+    margin-right: 5px;
+  }
+  .kontakty > img {
+    margin-right: 20px;
+    width: 100px;
+  }
+}
