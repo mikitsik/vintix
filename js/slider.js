@@ -11,7 +11,7 @@ function slider() {
   });
   setInterval(function()
   {
-      movement({target:{id:"next"}});
+    movement({target:{id:"next"}});
   }, 4000);
   function movement(e) {
     slider = document.querySelector(".slider");
