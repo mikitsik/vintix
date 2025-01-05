@@ -1,6 +1,17 @@
 .nav {
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-image: linear-gradient(
+    to top,
+    rgba(255,255,255,0),
+    rgba(255,255,255,0.5),
+    rgba(255,255,255,1),
+    rgba(255,255,255,1),
+    rgba(255,255,255,1),
+    rgba(255,255,255,1),
+    rgba(255,255,255,1),
+    rgba(255,255,255,1),
+    rgba(255,255,255,1)
+  );
   display: flex;
   flex-wrap: wrap;
   padding: 20px 0 10px;
@@ -40,6 +51,7 @@
 
 .call a {
   display: flex;
+  color: rgb(146, 108, 94);
   font-size: 1.6rem;
   font-weight: 700;
   text-decoration: none;
