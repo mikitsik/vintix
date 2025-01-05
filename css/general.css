@@ -59,19 +59,10 @@ p {
 
 footer {
   font-weight: 500;
-  margin: 100px 0 40px;
-  text-align: center;
-}
-
-footer a {
-  text-decoration: none;
   color: black;
+  margin: 100px 0 40px;
   opacity: 0.8;
-  transition: 0.4s;
-}
-
-footer a:hover {
-  opacity: 1;
+  text-align: center;
 }
 
 @media screen and (max-width: 730px) {
